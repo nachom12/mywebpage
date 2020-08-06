@@ -173,7 +173,12 @@ body{
 }
 
 @media screen and (max-width: 600px){
+    .header {
+        min-height: 80px;
+    }
+
     body{
+        min-height: 100vh;
         display: flex;
         background-color: #e5e5e5;
         border: none;
