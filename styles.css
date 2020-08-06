@@ -193,7 +193,12 @@ body{
         background-color: #fca311;
     }
     .footer{
-        display: flex;
         width: 100%;
+    }
+    
+    .info{
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 }
