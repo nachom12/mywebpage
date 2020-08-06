@@ -172,7 +172,7 @@ body{
     font-size: 8px;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     body{
         display: flex;
         background-color: #e5e5e5;
