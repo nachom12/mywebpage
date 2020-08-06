@@ -172,20 +172,24 @@ body{
     font-size: 8px;
 }
 
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     body{
+        display: flex;
         background-color: #e5e5e5;
         border: none;
         padding: 0px;
         width: 100%;
     }
     .sobreMi{
+        display: flex;
         width: 100%;
     }
     .mySkills{
+        display: flex;
         width: 100%;
     }
     .footer{
+        
        width: 100%;
     }
-} */
+}
