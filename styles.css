@@ -187,9 +187,10 @@ body{
     .mySkills{
         display: flex;
         width: 100%;
+        background-color: #fca311;
     }
     .footer{
-        
+
        width: 100%;
     }
 }
