@@ -126,6 +126,7 @@ body{
 .animacion{
     color: black;
     font-size: 50px;
+    margin-right: 10px;
 }
 
 .animacion:hover{
@@ -192,6 +193,10 @@ body{
         width: 100%;
         background-color: #fca311;
     }
+    .animacion{
+        margin-right: 10px;
+    }
+
     .footer{
         width: 100%;
     }
