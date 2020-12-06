@@ -72,6 +72,10 @@ body{
     font-size: 16px;
 }
 
+.textoimagen{
+    display: flex;
+}
+
 .sobreMi{
     margin-top: 50px;
     display: flex;
@@ -79,23 +83,26 @@ body{
     align-items: center;
 }
 
+
+
+.texto{
+    text-align: left;
+    padding: 30px 30px 30px; 
+}
+
 .sobreMi h2 {
     color: #14213d;
     font-size: 40px;
     margin-bottom: 20px;
-}
-
-.texto{
-    padding: 30px 30px 30px;
     text-align: center;
 }
-
 .sobreMi p {
     color: black;    
     line-height: 25px;
 }
 
 .sobreMi img {
+    margin-left: 5%;
     width: 250px;
     height: 500px;
     border-radius: 20px;
@@ -105,50 +112,64 @@ body{
 .mySkills {
     background-color: #fca311;
     display: flex;
-    height: 500px;
+    height: 70vh;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
-    padding-left: 30px;
+}
+
+.mySkills__tittle {
+    display: flex;
+    margin-left: 5%;
 }
 
 .mySkills--languages{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   padding-left: 30%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
-.aclaracion {
-    color: #14213d;
+.mySkills--languages__language{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    font-size: 25px;
 }
 
-.animacion{
-    color: black;
-    font-size: 50px;
-    /* margin-right: 10px; */
+.mySkills--languages__language img{
+    height: 80px;
+    width: 80px;
+    margin-top: 5%;
+    object-fit: cover;
 }
 
-.animacion:hover{
-    animation-duration: 2.5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    cursor: -webkit-grab;
+.mySkills--languages__language img:hover{ 
+    transform: scale(1);
+	animation: pulse 3s infinite;
 }
 
-@keyframes pulse {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    100% {transform: scale(1);}
-  }
-  .pulse {
-    animation-name: pulse;
-    animation-duration: 1s;
+@keyframes pulse{
+    0% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(0.85);
+	}
+
+	60% {
+		transform: scale(1);	
+    }
+    100% {
+		transform: scale(0.85);	
+	}
+}
+
+.mySkills--languages__language .soon{
+    opacity: 0.19;
 }
 
 .footer {
     background-color: #14213d;
-    
 }
 
 .info{
