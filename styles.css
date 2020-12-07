@@ -221,6 +221,7 @@ body{
     }
     .mySkills{
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -228,7 +229,9 @@ body{
     }
 
     .mySkills--languages{
-        margin: 0;
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -236,13 +239,7 @@ body{
 
     .mySkills--languages__language{
         display: flex;
-        flex-direction: row;
-        margin-right: 10%;
-        font-size: 25px;
-    }
-    
-    .animacion{
-        margin-right: 10px;
+        flex-wrap: nowrap;
     }
 
     .footer{
