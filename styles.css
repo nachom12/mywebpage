@@ -115,6 +115,7 @@ body{
     height: 70vh;
     width: 100%;
     align-items: center;
+    margin-top: 5%;
 }
 
 .mySkills__tittle {
@@ -124,8 +125,8 @@ body{
 
 .mySkills--languages{
     display: flex;
-    margin-top: 5%;
     margin-left: 5%;
+    flex-wrap: nowrap;
 }
 
 .mySkills--languages__language{
@@ -142,10 +143,11 @@ body{
     object-fit: cover;
 }
 
-.mySkills--languages__language img:hover{ 
+.mySkills--languages__language:hover img{ 
     transform: scale(1);
-	animation: pulse 3s infinite;
+    animation: pulse 3s infinite;
 }
+
 
 @keyframes pulse{
     0% {
@@ -205,15 +207,40 @@ body{
         padding: 0px;
         width: 100%;
     }
+
+    .textoimagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .sobreMi{
         display: flex;
         width: 100%;
     }
     .mySkills{
         display: flex;
+        flex-direction: column;
+        height: 100%;
         width: 100%;
         background-color: #fca311;
     }
+
+    .mySkills--languages{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .mySkills--languages__language{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10%;
+        font-size: 25px;
+    }
+    
     .animacion{
         margin-right: 10px;
     }
