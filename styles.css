@@ -228,18 +228,21 @@ body{
         background-color: #fca311;
     }
 
+    .mySkills__tittle{
+        width: 100%;
+        padding-left: 5%;
+    }
+
     .mySkills--languages{
         width: 100%;
         justify-content: center;
         /* align-items: center; */
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
     }
 
     .mySkills--languages__language{
         display: flex;
-        flex-wrap: nowrap;
     }
 
     .footer{
