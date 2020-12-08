@@ -201,6 +201,7 @@ body{
 @media screen and (max-width: 600px){
     .header {
         min-height: 80px;
+        width: 100%;
     }
 
     body{
@@ -209,11 +210,12 @@ body{
         border: none;
         padding: 0px;
         width: 100%;
+        overflow-x: scroll;
     }
 
     .textoimagen{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
