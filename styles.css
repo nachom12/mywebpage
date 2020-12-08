@@ -226,6 +226,7 @@ body{
         height: 100%;
         width: 100%;
         background-color: #fca311;
+        padding-bottom: 5%;
     }
 
     .mySkills__tittle{
@@ -244,6 +245,10 @@ body{
     .mySkills--languages__language{
         display: flex;
     }
+
+    /* .mySkills--languages__language a{
+        display: none;
+    } */
 
     .footer{
         width: 100%;
