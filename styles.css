@@ -125,19 +125,19 @@ body{
 
 .mySkills__tittle {
     display: flex;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 .mySkills--languages{
     display: flex;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     flex-wrap: nowrap;
 }
 
 .mySkills--languages__language{
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     font-size: 25px;
 }
 
@@ -261,7 +261,7 @@ body{
 
     .mySkills__tittle{
         width: 100%;
-        padding-left: 5%;
+        /* padding-left: 5%; */
     }
 
     .mySkills--languages{
