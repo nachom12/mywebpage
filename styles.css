@@ -121,6 +121,7 @@ body{
     width: 100%;
     align-items: center;
     margin-top: 5%;
+    padding-left: 3%;
 }
 
 .mySkills__tittle {
@@ -137,8 +138,12 @@ body{
 .mySkills--languages__language{
     display: flex;
     flex-direction: column;
-    /* margin-right: 10%; */
+    margin: 3%;
     font-size: 25px;
+}
+
+.mySkills--languages__language a {
+    text-align: center;
 }
 
 .mySkills--languages__language img{
@@ -275,6 +280,11 @@ body{
     .mySkills--languages__language{
         display: flex;
     }
+
+    .mySkills--languages__language a {
+       display: flex; 
+    }
+    
 
     /* .mySkills--languages__language a{
         display: none;
