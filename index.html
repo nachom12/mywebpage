@@ -17,6 +17,20 @@
     $('[data-toggle="tooltip"]').tooltip()
     })
 </script>
+<script>
+    function hola(parameter){
+        switch (parameter){
+            case 'web':
+                console.log(`clickeaste ${parameter} gg`)
+            break;
+            case 'python':
+                console.log(`clickeaste ${parameter} gg`)
+            break;
+            default:
+            break;
+        }  
+    }
+</script>
 <body>
     <header class="header">
         <img class = "tittle" src="img/juanmedinaheader.jpg">
@@ -37,7 +51,7 @@
                 Nowadays I'm on the third year of this beautiful carreer.</p>
                 <p>I was born in Paysandú, Uruguay and grow up in Guichon, Paysandú (the smallest city of my country).</p>
                 <p>Since october I'm working as a Java Enterprise Developer for Mobility Solutions,
-                but I dont stop there, I still preparing myself, studying, researching and still coding on my free time.
+                but I didn't stop there, I still trying to grow up, studying, researching and coding on my free time.
                 Im very interested on web development, at this moment my favourite langauges are 
                 Python and JavaScript.</p>
                 <p>I think I'm a person who enjoys learning and put into practice my new knowledges.</p>
@@ -48,24 +62,29 @@
             <section class = "mySkills">
                 <section class="mySkills__tittle">
                     <h2>Skills:</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="40" height="40"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#14213d"><path d="M79.12,3.44c-24.85937,0 -43.18812,8.57313 -55.04,22.01063c-11.85187,13.45094 -17.2,31.51094 -17.2,50.22937c0,15.1575 4.68969,29.26688 12.64469,40.82313c7.2025,10.48125 11.43531,22.88406 11.43531,35.54219v16.51469h6.88v-16.51469c0,-14.17656 -4.71656,-27.90969 -12.64469,-39.43906c-7.18906,-10.45437 -11.43531,-23.19312 -11.43531,-36.92625c0,-17.40156 4.97188,-33.74156 15.48,-45.66062c10.50813,-11.9325 26.57938,-19.69938 49.88,-19.69938c23.39469,0 38.55219,6.81281 48.56313,17.22688c10.01094,10.40062 14.98281,24.75187 16.82375,40.28562l0.08062,0.69875l16.50125,28.43375c0.84656,1.53188 0.41656,3.06375 -1.075,3.91031l-15.53375,7.76687v20.69375c0,12.87313 -10.58875,22.88406 -23.42156,21.70156l-0.05375,-0.01344l-14.36469,-0.92719v18.46312h6.88v-11.12625l6.90688,0.44344c16.75656,1.57219 30.93312,-11.825 30.93312,-28.54125v-16.4475l11.98625,-5.99312c4.68969,-2.60688 6.32906,-8.62688 3.74906,-13.27625l-0.01344,-0.02688l-15.99063,-27.54687c-2.0425,-16.11156 -7.28312,-31.65875 -18.44969,-43.28219c-11.40844,-11.85188 -28.75625,-19.32313 -53.52156,-19.32313zM86,48.10625c-1.63937,0.01344 -3.05031,1.16906 -3.37281,2.78156l-10.32,48.16c-0.38969,1.85437 0.79281,3.68187 2.64719,4.085c1.86781,0.38969 3.69531,-0.79281 4.09844,-2.66063l10.32,-48.16c0.22844,-1.02125 -0.01344,-2.09625 -0.67188,-2.91594c-0.65844,-0.81969 -1.65281,-1.29 -2.70094,-1.29zM56.88094,58.43969c-1.12875,-0.02687 -2.20375,0.49719 -2.87562,1.42438l-11.86531,15.81594l11.86531,15.81594c1.14219,1.53188 3.29219,1.84094 4.81062,0.69875c1.53188,-1.14219 1.84094,-3.29219 0.69875,-4.81062l-8.77469,-11.70406l8.77469,-11.70406c0.79281,-1.02125 0.94063,-2.40531 0.38969,-3.57437c-0.55094,-1.16906 -1.72,-1.92156 -3.02344,-1.96188zM104.69156,58.43969c-1.27656,0.08063 -2.40531,0.84656 -2.92938,2.01563c-0.5375,1.15562 -0.37625,2.51281 0.40313,3.52062l8.77469,11.70406l-8.77469,11.70406c-1.14219,1.51844 -0.83313,3.66844 0.69875,4.81062c1.51844,1.14219 3.66844,0.83313 4.81062,-0.69875l11.86531,-15.81594l-11.86531,-15.81594c-0.68531,-0.95406 -1.81406,-1.49156 -2.98312,-1.42438z"></path></g></g></svg>
                 </section>
                 <section class="mySkills--languages">
                     <section class="mySkills--languages__language">
-                        <a  data-toggle="tooltip" data-placement="top" title="Click and watch my web page design skills!">
+                        <a  data-toggle="tooltip" data-placement="top" title="Web Page Design">
                             <img src="https://img.icons8.com/material-outlined/96/000000/html-5.png"/>
                             <img src="https://img.icons8.com/ios/100/000000/css.png"/>
                             <img src="https://img.icons8.com/windows/96/000000/bootstrap.png"/>
                         </a>
                     </section>
                     <section class="mySkills--languages__language">
-                        <a data-toggle="tooltip" data-placement="top" title="Click and watch my JavaScript skills!">
+                        <a data-toggle="tooltip" data-placement="top" title="JavaScript">
                             <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
                             <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>
                             <img src="https://img.icons8.com/windows/96/000000/nodejs.png"/>
                         </a>
                     </section>
                     <section class="mySkills--languages__language">
-                        <a data-toggle="tooltip" data-placement="top" title="Click and watch my Python skills!">
+                        <a data-toggle="tooltip" data-placement="top" title="Python  (Django soon)"">
                             <img src="https://img.icons8.com/color/96/000000/python.png"/>
                             <!-- <a  id = "tooltip__django" data-toggle="tooltip" data-placement="right" title="Django? soon...  ;)" style="padding-right: 2%;"></a> -->
                                 <img class = "soon" src="https://img.icons8.com/ios/100/000000/django.png"/>
@@ -73,22 +92,43 @@
                         </a>
                     </section>
                     <section class="mySkills--languages__language">
-                        <a data-toggle="tooltip" data-placement="top" title="Click and watch my Java skills!">
+                        <a data-toggle="tooltip" data-placement="top" title="Java EE">
                             <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png"/>
                         </a>
                     </section>
                     <section class="mySkills--languages__language">
-                        <a data-toggle="tooltip" data-placement="top" title="Click and watch my C++ skills!">
+                        <a data-toggle="tooltip" data-placement="top" title="C++">
                             <img src="https://img.icons8.com/fluent-systems-regular/96/000000/c-plus-plus.png"/>
                         </a>    
                     </section>
                     <section class="mySkills--languages__language">
-                        <a data-toggle="tooltip" data-placement="top" title="Click and watch other skills!">
+                        <a data-toggle="tooltip" data-placement="top" title="SQL & GIT">
                             <img src="https://img.icons8.com/ios/96/000000/sql.png"/>
                             <img src="https://img.icons8.com/color/96/000000/git.png"/> 
                         </a>
                     </section>
                 </section>
+            </section>
+            <section class = "knowledges">
+                <section class = "knowledges__tittle">
+                    <h2>Knowledges:</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="40" height="40"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#14213d"><path d="M20.64,13.76v120.4h3.44c33.48625,0 60.37469,13.39719 60.37469,13.39719l1.54531,0.76594l1.54531,-0.76594c0,0 26.88844,-13.39719 60.37469,-13.39719h3.44v-120.4h-3.44c-33.84906,0 -59.71625,12.45656 -61.92,13.545c-2.20375,-1.08844 -28.07094,-13.545 -61.92,-13.545zM27.52,20.94906c28.36656,0.80625 50.40406,10.17219 55.04,12.26844v106.11594c-7.32344,-3.15781 -27.90969,-11.01875 -55.04,-11.74437zM144.48,20.94906v106.64c-27.13031,0.72562 -47.71656,8.58656 -55.04,11.74437v-106.11594c4.63594,-2.09625 26.67344,-11.46219 55.04,-12.26844zM6.88,30.96v116.96h3.44c44.00781,0 74.2825,13.46438 74.2825,13.46438l1.3975,0.61812l1.3975,-0.61812c0,0 30.27469,-13.46438 74.2825,-13.46438h3.44v-116.96h-6.88v110.32188c-41.96531,0.71219 -70.31844,12.52375 -72.24,13.35687c-1.92156,-0.83312 -30.27469,-12.64469 -72.24,-13.35687v-110.32188z"></path></g></g></svg>
+                </section>
+                <section class = "knowledges__list">
+                    <ul>
+                        <li>Object-Oriented Programming</li>
+                        <li>Relational Data Bases</li>
+                        <li>Design Patterns</li>
+                        <li>E-Sign</li>
+                        <li>Web Services</li>
+                        <li>Data Science</li>
+                        <li>Data analysis</li>
+                    </ul>
+                </section>                
             </section>
         </section>
     </section>
