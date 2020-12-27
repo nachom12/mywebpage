@@ -121,6 +121,13 @@ body{
     align-items: center;
     margin-top: 5%;
     padding-left: 3%;
+    transition: 1s;
+    
+}
+
+.mySkills:hover{
+    border: 1px solid black;
+    height: 80vh;
 }
 
 .mySkills__tittle {
@@ -173,6 +180,12 @@ body{
     display: flex;
     padding-left: 3%;
     align-items: center;
+    transition: 1s;
+}
+
+.knowledges:hover{
+    border: 1px solid black;
+    height: 80vh;
 }
 
 .knowledges h2 {
@@ -226,6 +239,12 @@ ul {
     width: 100%;
     padding-left: 3%;
     align-items: center;
+    transition: 1s;
+}
+
+.jobs:hover{
+    border: 1px solid black;
+    height: 60vh;
 }
 
 .jobs__tittle {
