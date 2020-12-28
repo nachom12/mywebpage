@@ -30,8 +30,6 @@
 
 .socialMedia{
     display: flex;
-    /* padding-right: 15px; */
-    cursor: pointer;
 }
 
 .socialMedia_item--twitter{
@@ -44,21 +42,25 @@
 
 .socialMedia_item--twitter:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 .socialMedia_item--instagram{
     padding-right: 10px;
     padding-left: 10px;
     opacity: 0.3;
+
 }
 .socialMedia_item--instagram:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 .socialMedia_item--github{
     padding-right: 10px;
     padding-left: 10px;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .socialMedia_item--github:hover{
@@ -125,7 +127,8 @@ body{
 }
 
 .mySkills:hover{
-    border: 2px  solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .mySkills__tittle {
@@ -182,7 +185,8 @@ body{
 }
 
 .knowledges:hover{
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .knowledges h2 {
@@ -240,7 +244,8 @@ ul {
 }
 
 .jobs:hover{
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .jobs__tittle {
