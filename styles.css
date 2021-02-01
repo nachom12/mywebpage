@@ -5,9 +5,11 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: #e5e5e5;
     cursor: default;
+    
 }
 
 .header{
+    width: 100%;
     align-items: center;
     height: 80px;
     background-color: #14213d;
@@ -28,8 +30,6 @@
 
 .socialMedia{
     display: flex;
-    padding-right: 15px;
-    cursor: pointer;
 }
 
 .socialMedia_item--twitter{
@@ -42,15 +42,18 @@
 
 .socialMedia_item--twitter:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 .socialMedia_item--instagram{
     padding-right: 10px;
     padding-left: 10px;
     opacity: 0.3;
+
 }
 .socialMedia_item--instagram:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 .socialMedia_item--github{
@@ -61,16 +64,23 @@
 
 .socialMedia_item--github:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 /* HEADER */
 
 body{
+    width: 100%;
     background-color: #e5e5e5;
     display: flex;
-    height: 100vh;
     flex-direction: column;
     font-size: 16px;
+    margin: 0px;
+    /* overflow-x: scroll; */
+}
+
+.textoimagen{
+    display: flex;
 }
 
 .sobreMi{
@@ -80,23 +90,23 @@ body{
     align-items: center;
 }
 
+.texto{
+    text-align: left;
+    padding: 30px 30px 30px; 
+}
+
 .sobreMi h2 {
     color: #14213d;
     font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.texto{
-    padding: 30px 30px 30px;
     text-align: center;
 }
-
 .sobreMi p {
     color: black;    
     line-height: 25px;
 }
 
 .sobreMi img {
+    margin-left: 5%;
     width: 250px;
     height: 500px;
     border-radius: 20px;
@@ -106,49 +116,194 @@ body{
 .mySkills {
     background-color: #fca311;
     display: flex;
-    height: 500px;
+    height: 70vh;
     width: 100%;
     align-items: center;
-    margin-top: 20px;
-    padding-left: 30px;
+    margin-top: 5%;
+    padding-left: 3%;
+    transition: 0.5s;
+}
+
+.mySkills:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.mySkills__tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 5%; */
+}
+
+.skill__icon {
+    height: 10px;
+    width: 10px;
+    object-fit: cover;   
 }
 
 .mySkills--languages{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   padding-left: 30%;
+    display: flex;
+    /* margin-left: 5%; */
+    flex-wrap: nowrap;
 }
 
-.aclaracion {
+.mySkills--languages__language{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    font-size: 25px;
+}
+
+.mySkills--languages__language a {
+    text-align: center;
+}
+
+.mySkills--languages__language img{
+    height: 80px;
+    width: 80px;
+    margin-top: 5%;
+    object-fit: cover;
+}
+
+.mySkills--languages__language:hover img{ 
+    transform: scale(1);
+    animation: pulse 3s infinite;
+}
+
+
+.knowledges {
+    background-color: #e5e5e5;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    padding-left: 3%;
+    align-items: center;
+    transition: 1s;
+}
+
+.knowledges:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.knowledges h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.knowledges__tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledges__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 3%;
+    padding-left: 5%;
+    width: 50%;
+    font-size: 26px;
+    font-weight: 300;   
+}
+
+ul {
+    width: 100%;
+}
+
+.knowledges__list li{
+    color: #14213d;
+    padding-left: 3%;
+    list-style-type: none;
+    transition: 0.5s;
+    margin: 1%;
+    padding: 1%;
+}
+
+.knowledges__list li:hover {
+    border: 3px solid #14213d;
+    border-radius: 4px;
+    border-left: none;
+    border-top: none;
+    background-color: #fca311;
+    color: white;
+    list-style-type: square;
+}
+
+.jobs {
+    display: flex;
+    background-color: #fca311;
+    height: 50vh;
+    width: 100%;
+    padding-left: 3%;
+    align-items: center;
+    transition: 1s;
+}
+
+.jobs:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.jobs__tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobs__date {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column;
+    color: #14213d;   
+    margin-left: auto;
+    font-size: 25px;
+    text-align: right;
+    /* border-bottom: 1px solid; */
+}
+
+.jobs__date--job{
+    padding-bottom: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid #14213d;
+}
+
+.jobs__description i{
     color: #14213d;
 }
 
-.animacion{
-    color: black;
-    font-size: 50px;
+.jobs__description b{
+    border-radius: black;
 }
 
-.animacion:hover{
-    animation-duration: 2.5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    
+
+@keyframes pulse{
+    0% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(0.85);
+	}
+
+	60% {
+		transform: scale(1);	
+    }
+    100% {
+		transform: scale(0.85);	
+	}
 }
 
-@keyframes pulse {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    100% {transform: scale(1);}
-  }
-  .pulse {
-    animation-name: pulse;
-    animation-duration: 1s;
+.mySkills--languages__language .soon{
+    opacity: 0.19;
 }
 
 .footer {
+    width: 100%;
     background-color: #14213d;
-    
 }
 
 .info{
@@ -172,20 +327,143 @@ body{
     font-size: 8px;
 }
 
-/* @media only screen and (max-width: 600px){
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media screen and (max-width: 600px){
+    .header {
+        min-height: 80px;
+        width: 100%;
+    }
+
     body{
+        display: flex;
         background-color: #e5e5e5;
         border: none;
         padding: 0px;
         width: 100%;
+        overflow-x: unset;
     }
+
+    .textoimagen{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
     .sobreMi{
+        display: flex;
         width: 100%;
     }
     .mySkills{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 100%;
+        /* min-height: 100%; */
+        width: 100%;
+        background-color: #fca311;
+        padding-bottom: 5%;
+    }
+
+    .mySkills:hover {
+        border: 1px solid black;
+    }
+
+    .mySkills__tittle{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* padding-left: 5%; */
+    }
+
+    .mySkills h2 {
+        margin-right: auto;
+    }
+
+    .mySkills--languages{
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mySkills--languages__language{
+        display: flex;
+    }
+
+    .mySkills--languages__language a {
+       display: flex; 
+    }
+    
+    .knowledges{
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
-    .footer{
-       width: 100%;
+    
+    .knowledges__tittle{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
     }
-} */
+    
+    .knowledges h2 {
+        margin-right: auto;
+    }
+
+    .knowledges__list{
+        width: 100%;
+        padding-right: 3%;
+    }
+
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .jobs__tittle{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        /* justify-content: center; */
+    }
+
+    .jobs__tittle h2 {
+        margin-right: auto;
+    }
+
+    
+    .footer{
+        width: 100%;
+    }
+    
+    .info{
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
